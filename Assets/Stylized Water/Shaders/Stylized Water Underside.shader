@@ -1,6 +1,6 @@
 // Made with Amplify Shader Editor
 // Available at the Unity Asset Store - http://u3d.as/y3X 
-Shader "StylizedWaterUnderside"
+Shader "Stylized/Water Underside"
 {
 	Properties
 	{
@@ -85,7 +85,7 @@ Shader "StylizedWaterUnderside"
 }
 /*ASEBEGIN
 Version=16700
-276;73;1289;632;1307.817;73.46452;1.3;True;False
+7;176;1906;835;1708.867;205.4145;1.3;True;False
 Node;AmplifyShaderEditor.RangedFloatNode;22;-1598.657,403.8951;Float;False;Property;_WaterplaneOffset;Waterplane Offset;7;0;Create;True;0;0;False;0;0;2.37;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.WorldSpaceCameraPos;17;-1645.542,252.3156;Float;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.SimpleAddOpNode;21;-1363.658,351.895;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
@@ -109,7 +109,7 @@ Node;AmplifyShaderEditor.SimpleAddOpNode;12;-261.4459,152.6712;Float;False;2;2;0
 Node;AmplifyShaderEditor.ColorNode;16;-164.5021,331.463;Float;False;Property;_Color;Color;1;0;Create;True;0;0;False;0;0,0,0,0;0.6462264,1,0.859405,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.ScreenColorNode;14;-133.4958,148.1968;Float;False;Global;_GrabScreen0;Grab Screen 0;35;0;Create;True;0;0;False;0;Object;-1;False;True;1;0;FLOAT4;0,0,0,0;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;15;69.01122,240.9438;Float;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;239.0926,193.5139;Half;False;True;2;Half;ASEMaterialInspector;0;0;Unlit;StylizedWaterUnderside;False;False;False;False;False;False;False;True;True;False;False;False;False;False;True;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Transparent;0.5;True;True;0;False;Transparent;;Transparent;All;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;True;2;5;False;-1;10;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;1;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;15;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
+Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;239.0926,193.5139;Half;False;True;2;Half;ASEMaterialInspector;0;0;Unlit;Stylized/Water Underside;False;False;False;False;False;False;False;True;True;False;False;False;False;False;True;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Transparent;0.5;True;True;0;False;Transparent;;Transparent;All;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;True;2;5;False;-1;10;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;1;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;15;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;21;0;17;2
 WireConnection;21;1;22;0
 WireConnection;18;0;21;0
@@ -134,4 +134,4 @@ WireConnection;15;0;14;0
 WireConnection;15;1;16;0
 WireConnection;0;2;15;0
 ASEEND*/
-//CHKSM=99AB0AFCCB81A2BBF1A202D9163D2B7EAE15C7EA
+//CHKSM=62C31BCC2FBA215F3C09E4C436A70E4BC9AE7D6B
