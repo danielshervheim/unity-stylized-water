@@ -5,19 +5,17 @@
 ![3](https://imgur.com/OUS2QxM.png)
 ![underwater](https://imgur.com/NypIShh.png)
 
-Highly configurable, and performant. Includes the following features:
-- Configurable colors based on distance and depth.
-- Edge foam.
-- Sun specular highlights.
-- Sparkles.
-- Refraction based on depth.
-- Foam on wave tips.
-- Subsurface scattering (on wave tips facing the sun).
-- Cubemap-based reflections.
-- Vertex-based waves.
+*(Also includes a simplified "underside" shader to simulate looking up from underwater).*
 
-Edge foam, sparkles, foam, and reflections are comparatively more expensive than the other effects, and can be toggled on/off to increase performance.
+## To Install
 
-Apply the included materials to Unity's default `Plane` object, or your own higher resolution one.
+Download the [.unitypackage](https://drive.google.com/open?id=1eYB-i1B2t8J9SR6_nryY3YpGiGqrutJ4), or clone this repository.
 
-Also includes a simpler variant meant for upside-down `Plane` objects, to simulate looking up while under water (see last screenshot).
+## To Use
+
+- Select your water plane mesh (or meshes).
+- Replace their materials with any of the presets in `Stylized Water/Materials`.
+
+## Options
+
+![options](https://imgur.com/xeDCc6m.png)
