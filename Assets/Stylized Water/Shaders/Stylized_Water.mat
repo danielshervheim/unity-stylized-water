@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Stylized_Water
+  m_Shader: {fileID: 4800000, guid: c8110ef7c96474f73b2ee5f90e026b10, type: 3}
+  m_ShaderKeywords: FANCY_SHADOWS SAMPLE_SHADOWS
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FoamTexture:
+        m_Texture: {fileID: 2800000, guid: 581fcfd543a4445829bb923bace720da, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaveNormalMap:
+        m_Texture: {fileID: 2800000, guid: b87c6510a4b3945a197eabf8b0d60278, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _DepthDensity: 0.5
+    - _DistanceDensity: 0.025
+    - _FancyShadows: 1
+    - _FoamNoiseScale: 0.1
+    - _FoamScale: 7.5
+    - _FoamSpeed: 0.1
+    - _MaxSampleDistance: 49
+    - _MaxShadowDistance: 50
+    - _RefractionStrength: 0
+    - _SunSpecularExponent: 1000
+    - _VertexNormalDelta: 0.01
+    - _Wave1Amplitude: 0.25
+    - _Wave1Direction: 0.5
+    - _Wave1Speed: 0.25
+    - _Wave1Wavelength: 10
+    - _Wave2Amplitude: 0.2
+    - _Wave2Direction: 0.25
+    - _Wave2Speed: 1
+    - _Wave2Wavelength: 10
+    - _WaveNormalDelta: 0.01
+    - _WaveNormalScale: 10
+    - _WaveNormalSpeed: 0.1
+    m_Colors:
+    - _DeepColor: {r: 0, g: 0.04299022, b: 0.2264151, a: 1}
+    - _FarColor: {r: 0.2251691, g: 0.43468606, b: 0.8679245, a: 1}
+    - _SSSColor: {r: 0.1745283, g: 1, b: 0.4563966, a: 1}
+    - _ShallowColor: {r: 0.5815681, g: 0.990566, b: 0.5186454, a: 1}
