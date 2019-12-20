@@ -1,11 +1,8 @@
 
 # Stylized Water for Unity
-![1](https://imgur.com/XzuQBZo.png)
-![2](https://imgur.com/ofuRXoq.png)
-![3](https://imgur.com/OUS2QxM.png)
-![underwater](https://imgur.com/NypIShh.png)
-
-*(Also includes a simplified "underside" shader to simulate looking up from underwater).*
+![1](/Images/img1.png)
+![2](/Images/img2.png)
+![3](/Images/img3.png)
 
 ## To Install
 
@@ -18,4 +15,4 @@ Download the [.unitypackage](https://drive.google.com/open?id=1eYB-i1B2t8J9SR6_n
 
 ## Options
 
-![options](https://imgur.com/xeDCc6m.png)
+![options](/Images/options.png)

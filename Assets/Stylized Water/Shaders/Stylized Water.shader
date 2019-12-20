@@ -13,14 +13,18 @@
         _WaveNormalSpeed ("Speed", float) = 1.0
 
         [Header(Base Color)]
+        [HDR]
         _ShallowColor ("Shallow", Color) = (0.44, 0.95, 0.36, 1.0)
+        [HDR]
         _DeepColor ("Deep", Color) =  (0.0, 0.05, 0.19, 1.0)
+        [HDR]
         _FarColor ("Far", Color) = (0.04, 0.27, 0.75, 1.0)
         
         [Header(Reflections)]
         _ReflectionContribution ("Contribution", Range(0.0, 1.0)) = 1.0
 
         [Header(Subsurface Scattering)]
+        [HDR]
         _SSSColor ("Color", Color) = (1, 1, 1, 1)
 
         [Header(Foam)]
@@ -32,17 +36,21 @@
         _FoamNoiseScale ("Noise Contribution", Range(0.0, 1.0)) = 0.5
 
         [Header(Sun Specular)]
+        [HDR]
         _SunSpecularColor ("Color", Color) = (1, 1, 1, 1)
         _SunSpecularExponent ("Exponent", float) = 1000
 
         [Header(Sparkle)]
+        [NoScaleOffset]
         _SparklesNormalMap ("Normal Map", 2D) = "bump"{}
         _SparkleScale ("Scale", float) = 10
         _SparkleSpeed ("Speed", float) = 0.75
+        [HDR]
         _SparkleColor ("Color", Color) = (1, 1, 1, 1)
         _SparkleExponent ("Exponent", float) = 10000
 
         [Header(Edge Foam)]
+        [HDR]
         _EdgeFoamColor ("Color", Color) = (1, 1, 1, 1)
         _EdgeFoamDepth ("Scale", float) = 10.0
 
