@@ -13,7 +13,7 @@ float SimpleWave(float2 position, float2 direction, float wavelength, float ampl
 {
     float x = PI * dot(position, direction) / wavelength;
     float phase = speed * _Time.y;
-    // return amplitude * sin(x + phase);
+    return amplitude * sin(x + phase);
     return amplitude * (1 - abs(sin(x + phase)));
 }
 
@@ -61,6 +61,24 @@ float3 MotionFourWayChaos(sampler2D tex, float2 uv, float speed, bool unpackNorm
     }
 }
 
+
+float3 MotionFourWaySparkle(sampler2D tex, float2 uv, float4 coordinateScale, float speed)
+{
+    float2 uv1 = Panner(uv * coordinateScale.x, float2( 0.1,  0.1), speed);
+    float2 uv2 = Panner(uv * coordinateScale.y, float2(-0.1, -0.1), speed);
+    float2 uv3 = Panner(uv * coordinateScale.z, float2(-0.1,  0.1), speed);
+    float2 uv4 = Panner(uv * coordinateScale.w, float2( 0.1, -0.1), speed);
+
+    float3 sample1 = UnpackNormal(tex2D(tex, uv1)).rgb;
+    float3 sample2 = UnpackNormal(tex2D(tex, uv2)).rgb;
+    float3 sample3 = UnpackNormal(tex2D(tex, uv3)).rgb;
+    float3 sample4 = UnpackNormal(tex2D(tex, uv4)).rgb;
+
+    float3 normalA = float3(sample1.x, sample2.y, 1);
+    float3 normalB = float3(sample3.x, sample4.y, 1);
+    
+    return normalize(float3( (normalA+normalB).xy, (normalA*normalB).z ));
+}
 
 
 #endif  // WATER_UTILITIES
