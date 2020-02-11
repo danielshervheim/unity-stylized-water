@@ -278,8 +278,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 112000000, guid: ed0293c56c934bc4d879013adda1c422,
     type: 2}
   m_UseShadowmask: 0
@@ -876,7 +876,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: d608321b463083d4daf6465a7857a2b4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f72d6d75185f842e498cbecf8339192c, type: 2}
+      objectReference: {fileID: 2100000, guid: 2f280c117f7574253a4a2adca2bf0e6b, type: 2}
     - target: {fileID: 2300000, guid: d608321b463083d4daf6465a7857a2b4, type: 3}
       propertyPath: m_CastShadows
       value: 0
@@ -1574,7 +1574,7 @@ Terrain:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663123293}
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_TerrainData: {fileID: 15600000, guid: d709e3ebe22e1d640a5526e7a76062de, type: 2}
   m_TreeDistance: 2000
   m_TreeBillboardDistance: 50
@@ -1590,12 +1590,7 @@ Terrain:
   m_DrawInstanced: 0
   m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 1
-  m_MaterialType: 0
-  m_LegacySpecular:
-    serializedVersion: 2
-    rgba: 4286545791
-  m_LegacyShininess: 0.078125
-  m_MaterialTemplate: {fileID: 0}
+  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -1667,6 +1662,7 @@ GameObject:
   - component: {fileID: 164}
   - component: {fileID: 320}
   - component: {fileID: 1687578797}
+  - component: {fileID: 1687578798}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1688,6 +1684,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 3
   lookSpeed: 90
+--- !u!114 &1687578798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687578796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634aad97e2a2e4a5e8029fd69ac1e937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1689928817
 GameObject:
   m_ObjectHideFlags: 0
