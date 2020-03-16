@@ -6,7 +6,7 @@
 
 ## To Install
 
-Download the [.unitypackage](https://drive.google.com/open?id=1eYB-i1B2t8J9SR6_nryY3YpGiGqrutJ4), or clone this repository.
+Download the [.unitypackage](https://github.com/danielshervheim/Stylized-Water/releases/download/v2.0/stylized_water_2.0.unitypackage), or clone this repository.
 
 ## To Use
 
