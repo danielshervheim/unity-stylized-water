@@ -1,8 +1,8 @@
 
 # Stylized Water for Unity
-![1](/Images/img1.png)
-![2](/Images/img2.png)
-![3](/Images/img3.png)
+![1](/Documentation/Figures/img1.png)
+![2](/Documentation/Figures/img2.png)
+![3](/Documentation/Figures/img3.png)
 
 ## To Install
 
@@ -15,4 +15,4 @@ Download the [.unitypackage](https://github.com/danielshervheim/Stylized-Water/r
 
 ## Options
 
-![options](/Images/options.png)
+![options](/Documentation/Figures/options.png)
